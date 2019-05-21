@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/goit-react-hw-03-2/static/css/main.f59e08ad.chunk.css",
-    "main.js": "/goit-react-hw-03-2/static/js/main.858b1bab.chunk.js",
-    "main.js.map": "/goit-react-hw-03-2/static/js/main.858b1bab.chunk.js.map",
+    "main.css": "/goit-react-hw-03-2/static/css/main.55bdd186.chunk.css",
+    "main.js": "/goit-react-hw-03-2/static/js/main.ac72828f.chunk.js",
+    "main.js.map": "/goit-react-hw-03-2/static/js/main.ac72828f.chunk.js.map",
     "runtime~main.js": "/goit-react-hw-03-2/static/js/runtime~main.43da7b74.js",
     "runtime~main.js.map": "/goit-react-hw-03-2/static/js/runtime~main.43da7b74.js.map",
-    "static/css/2.b672ec7a.chunk.css": "/goit-react-hw-03-2/static/css/2.b672ec7a.chunk.css",
-    "static/js/2.5f7490da.chunk.js": "/goit-react-hw-03-2/static/js/2.5f7490da.chunk.js",
-    "static/js/2.5f7490da.chunk.js.map": "/goit-react-hw-03-2/static/js/2.5f7490da.chunk.js.map",
+    "static/css/2.d9e9d549.chunk.css": "/goit-react-hw-03-2/static/css/2.d9e9d549.chunk.css",
+    "static/js/2.1b602a3e.chunk.js": "/goit-react-hw-03-2/static/js/2.1b602a3e.chunk.js",
+    "static/js/2.1b602a3e.chunk.js.map": "/goit-react-hw-03-2/static/js/2.1b602a3e.chunk.js.map",
     "index.html": "/goit-react-hw-03-2/index.html",
-    "precache-manifest.b12ac6db96d133f2ab9b8dabd364deed.js": "/goit-react-hw-03-2/precache-manifest.b12ac6db96d133f2ab9b8dabd364deed.js",
+    "precache-manifest.2c364b303753740840c2f660aa9f755c.js": "/goit-react-hw-03-2/precache-manifest.2c364b303753740840c2f660aa9f755c.js",
     "service-worker.js": "/goit-react-hw-03-2/service-worker.js",
-    "static/css/2.b672ec7a.chunk.css.map": "/goit-react-hw-03-2/static/css/2.b672ec7a.chunk.css.map",
-    "static/css/main.f59e08ad.chunk.css.map": "/goit-react-hw-03-2/static/css/main.f59e08ad.chunk.css.map"
+    "static/css/2.d9e9d549.chunk.css.map": "/goit-react-hw-03-2/static/css/2.d9e9d549.chunk.css.map",
+    "static/css/main.55bdd186.chunk.css.map": "/goit-react-hw-03-2/static/css/main.55bdd186.chunk.css.map"
   }
 }
