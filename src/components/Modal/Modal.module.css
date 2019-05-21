@@ -13,19 +13,11 @@
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
   width: 50vw;
+  height: auto;
   background-color: #fff;
 }
 
 .img {
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  max-width: 95%;
-  max-height: 95%;
-  width: auto;
+  width: 100%;
   height: auto;
 }

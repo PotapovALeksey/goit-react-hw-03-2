@@ -55,9 +55,6 @@ export default class App extends Component {
           page: state.page + 1,
           error: null,
         }));
-        setInterval(() => {
-          window.scrollTo(0, 1000);
-        }, 500);
       })
       .catch(error => {
         this.setState({ error });
@@ -69,6 +66,10 @@ export default class App extends Component {
 
   handleOpenModal = fullviewimg =>
     this.setState({ isModal: true, fullviewimg });
+
+  hanleLoader = () => {
+    this.setState({ isLoading: true });
+  };
 
   render() {
     const {

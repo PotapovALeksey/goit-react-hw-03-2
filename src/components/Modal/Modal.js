@@ -1,5 +1,7 @@
 import React, { Component, createRef } from 'react';
 import PropTypes from 'prop-types';
+import LazyLoad from 'react-lazy-load';
+import ImageLoader from '../ImageLoader/ImageLoader';
 import styles from './Modal.module.css';
 
 export default class Modal extends Component {
@@ -43,7 +45,9 @@ export default class Modal extends Component {
         onKeyPress={() => {}}
       >
         <div className={styles.content}>
-          <img src={imgUrl} alt="fullscreenimage" />
+          <LazyLoad>
+            <ImageLoader src={imgUrl} />
+          </LazyLoad>
         </div>
       </div>
     );
