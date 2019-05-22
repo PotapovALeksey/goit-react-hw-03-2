@@ -20,7 +20,7 @@ export default class ImageLoader extends Component {
 
   // image onLoad handler to update state to loaded
   onLoad = () => {
-    _loaded[this.props.src] = true;
+    LOADED[this.props.src] = true;
     this.setState(() => ({ loaded: true }));
   };
 
