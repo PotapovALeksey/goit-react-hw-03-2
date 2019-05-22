@@ -1,6 +1,5 @@
 import React, { Component, createRef } from 'react';
 import PropTypes from 'prop-types';
-import LazyLoad from 'react-lazy-load';
 import ImageLoader from '../ImageLoader/ImageLoader';
 import styles from './Modal.module.css';
 
@@ -45,9 +44,7 @@ export default class Modal extends Component {
         onKeyPress={() => {}}
       >
         <div className={styles.content}>
-          <LazyLoad>
-            <ImageLoader src={imgUrl} />
-          </LazyLoad>
+          <ImageLoader src={imgUrl} />
         </div>
       </div>
     );
