@@ -8,18 +8,6 @@ import Text from './Error/Text';
 import styles from './App.module.css';
 import * as API from '../services/images-api';
 
-const myScrollTo = (step, to) => {
-  let i = step;
-  // eslint-disable-next-line func-names
-  const interval = setInterval(function() {
-    window.scrollTo(0, i);
-    i += step;
-
-    if (i >= to) clearInterval(interval);
-  }, 20);
-  window.scrollTo(0, to);
-};
-
 export default class App extends Component {
   state = {
     images: [],
@@ -32,8 +20,13 @@ export default class App extends Component {
     value: '',
   };
 
-  componentDidMount() {
-    this.handleFetchedImages();
+  componentDidUpdate(prevProps, prevState) {
+    const { images } = this.state;
+    if (prevState.images === images) return;
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: 'smooth',
+    });
   }
 
   handleFetchedImages = (value = 'cat', page = '1') => {
@@ -59,7 +52,6 @@ export default class App extends Component {
   handleLoadMore = () => {
     this.setState({ isLoading: true });
     const { value, page } = this.state;
-
     API.fetchedImages(value, page)
       .then(res => {
         this.setState(state => ({
@@ -67,7 +59,6 @@ export default class App extends Component {
           page: state.page + 1,
           error: null,
         }));
-        myScrollTo(50, 1450);
       })
       .catch(error => {
         this.setState({ error });
